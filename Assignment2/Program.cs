@@ -16,6 +16,6 @@ class Program
         Console.BackgroundColor = ConsoleColor.White;
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Black;
-        Console.Title = "My Console Classes";
+        Console.Title = "Assignment 2 - Björn Tenje Persson";
     }
 }

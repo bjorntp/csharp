@@ -13,6 +13,12 @@ class MathWork
             int n1 = Input.ReadIntegerConsole("Give first number: ");
             int n2 = Input.ReadIntegerConsole("Give second number: ");
 
+            if (n2 < n1) {
+                int n3 = n2;
+                n2 = n1;
+                n1 = n3;
+            }
+
             Console.WriteLine(string.Format("**** Them sum of numbers between {0} and {1} is: {2}\n", n1, n2, SumNumbers(n1, n2)));
             PrintEvenNumbers(n1, n2);
             PrintOddNumbers(n1, n2);
@@ -21,7 +27,7 @@ class MathWork
             stop = ExitCalculation();
 
 
-        } while (stop);
+        } while (!stop);
 
 
 
